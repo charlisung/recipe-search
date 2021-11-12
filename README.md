@@ -4,4 +4,4 @@
 - Display a meal recipe and instruction
 - Can get a random meal recipe
 
-![demo](https://github.com/charlisung/recipe-search/blob/main/src/img/recipe-search.gif)
+![demo](https://github.com/devCharli/recipe-search/blob/main/recipe.gif)
