@@ -1,25 +1,26 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FaHotdog } from "react-icons/fa";
 
-export const SearchForm = ({ setTerm }) => {
+export const SearchForm = ({ handleSearch, setTerm }) => {
   return (
-    <>
-      <form className="search-form">
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <form
+        className="search-form"
+        onSubmit={handleSearch}
+        style={{ marginRight: "1px" }}
+      >
         <input
           className="input"
           onChange={(e) => setTerm(e.target.value)}
           placeholder="Search food name..."
         />
-        <Link to="/results">
-          <button>Search</button>
-        </Link>
-        <Link to="/random">
-          <button>
-            Random <FaHotdog />
-          </button>
-        </Link>
+        <button>Search</button>
       </form>
-    </>
+      <Link to="/random">
+        <button>
+          Random <FaHotdog />
+        </button>
+      </Link>
+    </div>
   );
 };

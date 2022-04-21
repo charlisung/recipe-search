@@ -1,5 +1,5 @@
 import React from "react";
-import UseFetch from "../UseFetch";
+import UseFetch from "../hooks/UseFetch";
 import { useHistory } from "react-router-dom";
 
 export const Random = () => {

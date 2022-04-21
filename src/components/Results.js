@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import UseFetch from "../UseFetch";
+import { Link, useLocation } from "react-router-dom";
+import UseFetch from "../hooks/UseFetch";
 
-export const Results = ({ term }) => {
+export const Results = () => {
+  const location = useLocation();
+  const term = location.state.term;
   const {
     data: meals,
     isPending,
     error,
   } = UseFetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`);
+
   return (
     <>
       <h2>Results for '{term}'</h2>

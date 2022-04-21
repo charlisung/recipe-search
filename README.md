@@ -1,7 +1,37 @@
-# Meal Recipe Search
 
-- A simple recipe search app, fetch data from [TheMealDB API](https://www.themealdb.com/api.php)
-- Display a meal recipe and instruction
-- Can get a random meal recipe
+# Recipe App 🧑‍🍳
 
-![demo](https://github.com/devCharli/recipe-search/blob/main/recipe.gif)
+This is a recipe app built with react. Users can search food keyword to get recipes. Recipes are fetched from [TheMealDB API](https://www.themealdb.com/api.php).
+
+I built this app when I was pretty new to react. I was really confused back then and now I understand why I was so confused... My codes were confusing... 
+
+Refactoring this code, I realize I have to really plan out how I'm gonna structure future app. 
+
+
+
+## Lessons Learned
+
+- Write codes that you will understand and refactor later! 
+
+
+
+## Future Challenges
+- When a user search a keyword, app should redirect to `/search?q={keyword}`
+
+## Demo
+![demo](https://github.com/devCharli/farmland-mern/blob/main/farmstand.gif)
+
+
+## Run Locally
+
+Install
+
+```bash
+  yarn
+```
+Start app 
+```bash
+  yarn start
+```
+
+

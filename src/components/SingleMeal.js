@@ -1,5 +1,5 @@
 import { useParams, useHistory } from "react-router-dom";
-import UseFetch from "../UseFetch";
+import UseFetch from "../hooks/UseFetch";
 
 export const SingleMeal = () => {
   const { id } = useParams();
